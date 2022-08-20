@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 20, 2022, 7:12:43 AM
+    Author     : Davis
+*/
+
+.menu-bar{
+    -fx-background-color: #007bff;
+    -fx-fill: white;
+}
+
+.menu-bar .container .menu:openvertically .label .text{
+    -fx-fill: white;
+}
+
+ .menu-item  {
+   -fx-background-color: #007bff;
+}

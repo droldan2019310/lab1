@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="913.0" stylesheets="@../styles/PrincipalView.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PrincipalViewController">
+   <children>
+      <MenuBar layoutX="53.0" layoutY="28.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="310.0" fitWidth="417.0" layoutX="46.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/dog.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="310.0" fitWidth="347.0" layoutX="499.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/18915856.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textNameDog" layoutX="46.0" layoutY="546.0" prefHeight="31.0" prefWidth="130.0" />
+      <TextField fx:id="textCourageDog" editable="false" layoutX="202.0" layoutY="546.0" prefHeight="31.0" prefWidth="144.0" promptText="campo automático" />
+      <TextField fx:id="textRankDog" editable="false" layoutX="46.0" layoutY="614.0" prefHeight="31.0" prefWidth="144.0" promptText="campo automático" />
+      <TextField fx:id="textActionDog" editable="false" layoutX="46.0" layoutY="105.0" prefHeight="31.0" prefWidth="331.0" />
+      <Button fx:id="btnSaveDog" layoutX="209.0" layoutY="614.0" mnemonicParsing="false" onAction="#SaveDog" text="Guardar Perro" />
+      <Label layoutX="46.0" layoutY="517.0" text="Nombre" />
+      <Label layoutX="202.0" layoutY="517.0" text="Animo" />
+      <Label layoutX="46.0" layoutY="585.0" text="Umbral" />
+      <Label layoutX="47.0" layoutY="67.0" text="Acción del Perro" />
+      <TextField fx:id="reactionPerson" editable="false" layoutX="499.0" layoutY="105.0" prefHeight="31.0" prefWidth="310.0" />
+      <Label layoutX="499.0" layoutY="67.0" text="Reacción del cuidador" />
+      <Button fx:id="btnInteract" layoutX="554.0" layoutY="152.0" mnemonicParsing="false" onAction="#interactDog" text="Interactuar" />
+      <Button fx:id="btngiveCookie" layoutX="654.0" layoutY="152.0" mnemonicParsing="false" onAction="#giveCookie" text="Dar galleta" />
+      <TextField fx:id="namePerson" layoutX="499.0" layoutY="546.0" />
+      <TextField fx:id="reliabilityPerson" editable="false" layoutX="499.0" layoutY="614.0" promptText="campo automático" />
+      <TextField fx:id="isCookiePerson" layoutX="695.0" layoutY="546.0" promptText="true or false" />
+      <Button fx:id="btnSavePerson" layoutX="700.0" layoutY="614.0" mnemonicParsing="false" onAction="#savePerson" text="Guardar Persona" />
+      <Label layoutX="499.0" layoutY="517.0" text="Nombre" />
+      <Label layoutX="499.0" layoutY="585.0" text="Confiabilidad" />
+      <Label layoutX="701.0" layoutY="517.0" text="Tengo galleta" />
+   </children>
+</AnchorPane>
